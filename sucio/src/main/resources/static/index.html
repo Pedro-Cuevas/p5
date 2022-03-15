@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div>
+        <form>
+            <div><input id="inputName" type="text" /></div>
+            <div><input id="inputSurname" type="text" /></div>
+            <div><input id="inputAge" type="number" /></div>
+        </form>
+    </div>
+</body>
+
+<script>
+    const getContactData = async () => {
+        let inputName = document.getElementById("inputName").value;
+        let inputSurname = document.getElementById("inputSurname").value;
+        let inputAge = document.getElementById("inputAge").value;
+
+        let request = await fetch("/contacts/", {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name: inputName,
+                surname: inputSurname,
+                age: parseInt(inputAge),
+            }),
+        });
+
+        if(request.ok) {
+            console.log(await request.json());
+        }
+    }
+
+</script>
+</html>
