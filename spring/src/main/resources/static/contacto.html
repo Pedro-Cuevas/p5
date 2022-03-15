@@ -77,7 +77,7 @@
     <img src="assets/img/ayuda.png" class="img-fluid" alt="">
 </div>
 
-<section id="formulario" class="services">
+<section id="formulario">
 
     <div class="container" data-aos="fade-up">
 
@@ -86,58 +86,64 @@
         </header>
     </div>
 
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-4 d-flex justify-content-center">
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="nombre">
+    <div class="container">
+        <form>
+            <div class="row justify-content-evenly">
+                <div class="col-lg-3 d-flex mb-2">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="nombre">
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="surname" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="surname" aria-describedby="nombre">
+                <div class="col-lg-3 d-flex mb-2">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Dirección de Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
                 </div>
-            </form>
-        </div>
-        <div class="col-lg-4  d-flex justify-content-center">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Solo usaremos el email para la consulta realizada.</div>
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Autorizo la política de datos</label>
-                </div>
-                <select class="form-select" aria-label="gender">
-                    <option selected>Género</option>
-                    <option value="1">Hombre</option>
-                    <option value="2">Mujer</option>
-                    <option value="3">Otro</option>
-                    <option value="4">Prefiero no decirlo</option>
-                </select>
-            </form>
-        </div>
-    </div>
-    <div class="row mb-3"></div>
-    <div class="row">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4 d-flex justify-content-center">
-            <div class="input-group">
-                <span class="input-group-text">Consulta</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
             </div>
-        </div>
+            <div class="row justify-content-evenly">
+                <div class="col-lg-3 d-flex mb-2">
+                    <div class="form-group">
+                        <label for="surname" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="surname" aria-describedby="surname">
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex mb-2">
+                    <select class="form-select mt-3" id ="gender" aria-label="gender">
+                        <option selected value="unknown">Género</option>
+                        <option value="male">Hombre</option>
+                        <option value="female">Mujer</option>
+                        <option value="other">Otro</option>
+                        <option value="unsaid">Prefiero no decirlo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 d-flex mb-2 mt-2">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dataPolicyCheck">
+                        <label class="form-check-label" for="dataPolicyCheck">Autorizo la política de datos</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 d-flex mb-2">
+                    <div class="input-group">
+                        <span class="input-group-text">Consulta</span>
+                        <textarea id="textProblem" class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col d-flex justify-content-center">
+                    <button type="button" id="btnContact" class="btn btn-primary">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
-    <div class="row mb-3"></div>
-    <div class="row">
-        <div class="col d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-    </div>
-
 </section>
 
 
@@ -213,6 +219,8 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+<!-- JS file used for the form-->
+<script src="assets/js/contacto.js"></script>
 
 </body>
 </html>
