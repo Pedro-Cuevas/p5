@@ -7,13 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ContactController {
+    private java.util.ArrayList<Contact> contactList = new java.util.ArrayList<Contact>();
+
     @GetMapping("/contacto")
-    public String getContacts(){
-        return "HEEEEY YA GET";
+    public Contact getLastContact(){
+        return contactList.get(contactList.size()-1);
     }
     
     @PostMapping("/contacto")
     public Contact postContacts(@RequestBody Contact contact){
-        return contact;
+        contactList.add(contact);
+        return contactList.get(contactList.size()-1);
     }
 }
