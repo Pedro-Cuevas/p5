@@ -20,7 +20,6 @@ const putContactData = async () => {
             textProblem: inputTextProblem,
         }),
     });
-
 }
 
 const displayLastContact = async () => {
