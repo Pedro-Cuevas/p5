@@ -21,9 +21,18 @@ const putContactData = async () => {
         }),
     });
 
+}
+
+const displayLastContact = async () => {
+    
+    let request = await fetch("/contacto", {
+        method: 'GET',
+    });
+
     if(request.ok) {
         console.log(await request.json());
     }
+    document.getElementById("getMessage")
 }
 
 document.getElementById("btnContact").addEventListener("click", putContactData)
