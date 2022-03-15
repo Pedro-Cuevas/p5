@@ -1,12 +1,29 @@
-const getData = async () => {
-    let name = document.getElementById("name").value;
-    let surname = document.getElementById("surname").value;
-    let email = document.getElementById("email").value;
-    let gender = document.getElementById("gender").value;
-    let dataPolicyCheck = document.getElementById("dataPolicyCheck").checked;
-    let textProblem = document.getElementById("textProblem").value;
+const putContactData = async () => {
+    let inputName = document.getElementById("name").value;
+    let inputSurname = document.getElementById("surname").value;
+    let inputEmail = document.getElementById("email").value;
+    let inputGender = document.getElementById("gender").value;
+    let inputDataPolicyCheck = document.getElementById("dataPolicyCheck").checked; //boolean
+    let inputTextProblem = document.getElementById("textProblem").value;
 
-    console.log(gender + ", " + dataPolicyCheck + ", " + textProblem);
+    let request = await fetch("/contacto", {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            name: inputName,
+            surname: inputSurname,
+            email: inputEmail,
+            gender: inputGender,
+            dataPolicyCheck: inputDataPolicyCheck,
+            textProblem: inputTextProblem,
+        }),
+    });
+
+    if(request.ok) {
+        console.log(await request.json());
+    }
 }
 
-document.getElementById("btnContact").addEventListener("click", getData)
+document.getElementById("btnContact").addEventListener("click", putContactData)
