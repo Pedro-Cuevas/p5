@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Telefónica: Observatorio COVID</title>
+    <meta content="" name="description">
+
+    <meta content="" name="keywords">
+
+    <!-- Favicon -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: FlexStart - v1.9.0
+    * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="">
+        </a>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="index.html#about">Nosotros</a></li>
+                <li><a class="nav-link scrollto" href="index.html#services">Servicios</a></li>
+                <li><a class="nav-link scrollto" href="index.html#accionistas">Accionistas</a></li>
+                <li class="dropdown"><a href="#"><span>Otros Servicios</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="info_covid.html">Observatorio COVID-19</a></li>
+                        <li><a href="#">5G</a></li>
+                        <li class="dropdown"><a href="#"><span>Servicios a empresas</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Telefonía satélite</a></li>
+                                <li><a href="#">Servicios en la nube</a></li>
+                                <li><a href="#">Internet satélite</a></li>
+                                <li><a href="#">Ciberseguridad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Movistar</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header><!-- End Header -->
+
+<!-- <div class="col-lg-12 d-flex justify-content-center" data-aos-delay="200">
+    <img src="assets/img/covid.png" class="img-fluid" alt="">
+</div> -->
+
+
+
+<div class="hero d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src="assets/img/covid.png" class="img-fluid" alt="icono covid">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">Observatorio COVID-19</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">Buscador de datos sobre la pandemia</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<section id="covid panel">
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-lg-4 d-flex">
+                <select class="form-select" aria-label="country" id = "countrySelection">
+                    <option value="AF">Afganistán</option>
+                    <option value="AL">Albania</option>
+                    <option value="DE">Alemania</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antártida</option>
+                    <option value="AG">Antigua y Barbuda</option>
+                    <option value="AN">Antillas Holandesas</option>
+                    <option value="SA">Arabia Saudí­</option>
+                    <option value="DZ">Argelia</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaiyán</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrein</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BE">Bélgica</option>
+                    <option value="BZ">Belice</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermudas</option>
+                    <option value="BY">Bielorrusia</option>
+                    <option value="MM">Birmania</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BA">Bosnia y Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BR">Brasil</option>
+                    <option value="BN">Brunei</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="BT">Bután</option>
+                    <option value="CV">Cabo Verde</option>
+                    <option value="KH">Camboya</option>
+                    <option value="CM">Camerún</option>
+                    <option value="CA">Canadá</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CY">Chipre</option>
+                    <option value="VA">Ciudad del Vaticano (Santa Sede)</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comores</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, República Democrática del</option>
+                    <option value="KR">Corea</option>
+                    <option value="KP">Corea del Norte</option>
+                    <option value="CI">Costa de Marfi­l</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="HR">Croacia (Hrvatska)</option>
+                    <option value="CU">Cuba</option>
+                    <option value="DK">Dinamarca</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egipto</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="AE">Emiratos Árabes Unidos</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="SI">Eslovenia</option>
+                    <option value="ES">España</option>
+                    <option value="US" selected>Estados Unidos</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Etiopía</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="PH">Filipinas</option>
+                    <option value="FI">Finlandia</option>
+                    <option value="FR">Francia</option>
+                    <option value="GA">Gabón</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GD">Granada</option>
+                    <option value="GR">Grecia</option>
+                    <option value="GL">Groenlandia</option>
+                    <option value="GP">Guadalupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GY">Guayana</option>
+                    <option value="GF">Guayana Francesa</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GQ">Guinea Ecuatorial</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="HT">Haití­</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HU">Hungría</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IQ">Irak</option>
+                    <option value="IR">Irán</option>
+                    <option value="IE">Irlanda</option>
+                    <option value="BV">Isla Bouvet</option>
+                    <option value="CX">Isla de Christmas</option>
+                    <option value="IS">Islandia</option>
+                    <option value="KY">Islas Caimán</option>
+                    <option value="CK">Islas Cook</option>
+                    <option value="CC">Islas de Cocos o Keeling</option>
+                    <option value="FO">Islas Faroe</option>
+                    <option value="HM">Islas Heard y McDonald</option>
+                    <option value="FK">Islas Malvinas</option>
+                    <option value="MP">Islas Marianas del Norte</option>
+                    <option value="MH">Islas Marshall</option>
+                    <option value="UM">Islas menores de Estados Unidos</option>
+                    <option value="PW">Islas Palau</option>
+                    <option value="SB">Islas Salomón</option>
+                    <option value="SJ">Islas Svalbard y Jan Mayen</option>
+                    <option value="TK">Islas Tokelau</option>
+                    <option value="TC">Islas Turks y Caicos</option>
+                    <option value="VI">Islas Ví­rgenes (EE.UU.)</option>
+                    <option value="VG">Islas Ví­rgenes (Reino Unido)</option>
+                    <option value="WF">Islas Wallis y Futuna</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italia</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japón</option>
+                    <option value="JO">Jordania</option>
+                    <option value="KZ">Kazajistán</option>
+                    <option value="KE">Kenia</option>
+                    <option value="KG">Kirguizistán</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="LA">Laos</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LV">Letonia</option>
+                    <option value="LB">Líbano</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libia</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lituania</option>
+                    <option value="LU">Luxemburgo</option>
+                    <option value="MK">Macedonia, Ex-República Yugoslava de</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MY">Malasia</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MV">Maldivas</option>
+                    <option value="ML">Malí</option>
+                    <option value="MT">Malta</option>
+                    <option value="MA">Marruecos</option>
+                    <option value="MQ">Martinica</option>
+                    <option value="MU">Mauricio</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">México</option>
+                    <option value="FM">Micronesia</option>
+                    <option value="MD">Moldavia</option>
+                    <option value="MC">Mónaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Níger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk</option>
+                    <option value="NO">Noruega</option>
+                    <option value="NC">Nueva Caledonia</option>
+                    <option value="NZ">Nueva Zelanda</option>
+                    <option value="OM">Omán</option>
+                    <option value="NL">Paí­ses Bajos</option>
+                    <option value="PA">PanamÃ¡</option>
+                    <option value="PG">PapÃºa Nueva Guinea</option>
+                    <option value="PK">PaquistÃ¡n</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Perú</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PF">Polinesia Francesa</option>
+                    <option value="PL">Polonia</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="UK">Reino Unido</option>
+                    <option value="CF">República Centroafricana</option>
+                    <option value="CZ">República Checa</option>
+                    <option value="ZA">República de Suáfrica</option>
+                    <option value="DO">República Dominicana</option>
+                    <option value="SK">República Eslovaca</option>
+                    <option value="RE">Reunión</option>
+                    <option value="RW">Ruanda</option>
+                    <option value="RO">Rumania</option>
+                    <option value="RU">Rusia</option>
+                    <option value="EH">Sahara Occidental</option>
+                    <option value="KN">Saint Kitts y Nevis</option>
+                    <option value="WS">Samoa</option>
+                    <option value="AS">Samoa Americana</option>
+                    <option value="SM">San Marino</option>
+                    <option value="VC">San Vicente y Granadinas</option>
+                    <option value="SH">Santa Helena</option>
+                    <option value="LC">Santa Lucí­a</option>
+                    <option value="ST">Santo Tomé y Príncipe</option>
+                    <option value="SN">Senegal</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leona</option>
+                    <option value="SG">Singapur</option>
+                    <option value="SY">Siria</option>
+                    <option value="SO">Somalia</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="PM">St. Pierre y Miquelon</option>
+                    <option value="SZ">Suazilandia</option>
+                    <option value="SD">Sudán</option>
+                    <option value="SE">Suecia</option>
+                    <option value="CH">Suiza</option>
+                    <option value="SR">Surinam</option>
+                    <option value="TH">Tailandia</option>
+                    <option value="TW">Taiwán</option>
+                    <option value="TZ">Tanzania</option>
+                    <option value="TJ">Tayikistán</option>
+                    <option value="TF">Territorios Franceses del Sur</option>
+                    <option value="TP">Timor Oriental</option>
+                    <option value="TG">Togo</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad y Tobago</option>
+                    <option value="TN">Túnez</option>
+                    <option value="TM">Turkmenistán</option>
+                    <option value="TR">Turquía</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UA">Ucrania</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistán</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="YE">Yemen</option>
+                    <option value="YU">Yugoslavia</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbawe</option>
+                </select>
+            </div>
+            <div class="col-lg-3 d-flex">
+                <button type="submit" class="btn btn-primary mt-1" id="selCountry">
+                    Buscar país seleccionado
+                </button>
+            </div>
+            <div class="col-lg-5 d-flex">
+                <button type="submit" class="btn btn-primary mt-1" id="myCountry">
+                    Buscar mi país automáticamente
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section id="covid-counts" class="counts">
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <div>
+                            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" 
+                                 class="purecounter" id = "newPos"></span>
+                            <p>nuevos positivos</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <i class="bi bi-globe" style="color: #ee7d20;"></i>
+                        <div>
+                            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"
+                                id = "totalPos"></span>
+                            <p>positivos totales</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <i class="bi bi-emoji-dizzy-fill" style="color: #850000;"></i>
+                        <div>
+                            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"
+                                id = "newDeaths"></span>
+                            <p>nuevos fallecimientos</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <i class="bi bi-brightness-alt-high" style="color: #000000;"></i>
+                        <div>
+                            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"
+                                id = "totalDeaths"></span>
+                            <p>fallecimientos totales</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <section id="error-message" class="display-none services" style="display:none" >
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box red">
+                <i class="bi bi-bug-fill"></i>
+                <h3>Error</h3>
+                <p>No hemos encontrado datos sobre el país que estabas buscando.</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-info">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <p>Síguenos en nuestras redes sociales:</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">Nosotros</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Servicios</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#accionistas">Accionistas</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.telefonica.com/es/sostenibilidad-innovacion/privacidad-seguridad/privacidad/">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Datos de contacto</h4>
+                    <p>
+                        CALLE GRAN VIA, 28 <br>
+                        Madrid, 28013<br>
+                        España <br><br>
+                        <strong>Teléfono:</strong> 	936 895 350<br>
+                        <strong>Email:</strong> telefonica@telefonica.es<br>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Telefónica</span></strong>. Todos los derechos reservados.
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<!-- covid functionalities JS File -->
+<script src="assets/js/covid.js"></script>
+<!-- jquery JS File -->
+<script src="assets/js/jquery.js"></script>
+
+</body>
+</html>
