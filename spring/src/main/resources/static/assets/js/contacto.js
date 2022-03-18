@@ -20,6 +20,10 @@ const putContactData = async () => {
             textProblem: inputTextProblem,
         }),
     });
+
+    if(request.ok) {
+        displayLastContact();
+    }
 }
 
 const displayLastContact = async () => {
@@ -29,9 +33,13 @@ const displayLastContact = async () => {
     });
 
     if(request.ok) {
-        console.log(await request.json());
+        let contacto = await request.json();
+        console.log(contacto);
+        let texto = "<h3>Solicitud guardada exitosamente</h3><p>" + contacto.name + ", te enviaremos un correo a " 
+        + contacto.email + " próximamente</p>";
+        document.getElementById("getMessage").innerHTML = texto;
+        document.getElementById("sectionGetMessage").style.display = 'block';
     }
-    document.getElementById("getMessage")
 }
 
 document.getElementById("btnContact").addEventListener("click", putContactData)
