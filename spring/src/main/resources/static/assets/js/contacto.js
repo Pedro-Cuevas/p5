@@ -35,10 +35,11 @@ const displayLastContact = async () => {
     if(request.ok) {
         let contacto = await request.json();
         console.log(contacto);
-        let texto = "<h3>Solicitud guardada exitosamente</h3><p>" + contacto.name + ", te enviaremos un correo a " 
+        let texto = "<h3>Solicitud guardada</h3><p>" + contacto.name + ", te enviaremos un correo a " 
         + contacto.email + " próximamente</p>";
         document.getElementById("getMessage").innerHTML = texto;
         document.getElementById("sectionGetMessage").style.display = 'block';
+        document.getElementById("getMessageContainer").scrollIntoView();
     }
 }
 
