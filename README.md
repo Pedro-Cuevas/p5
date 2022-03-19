@@ -14,8 +14,8 @@ Cuando el usuario pulsa el botón de enviar, se realiza una petición PUT para g
 
 ## Archivos relevantes
 
-- HTML del formulario: spring/src/main/resources/static/contacto.html
+- HTML del formulario: [spring/src/main/resources/static/contacto.html](https://github.com/Pedro-Cuevas/p5/tree/main/spring/src/main/resources/static/contacto.html)
 
-- Javascript del formulario: spring/src/main/resources/static/assets/js/contacto.js
+- Javascript del formulario: [spring/src/main/resources/static/assets/js/contacto.js](https://github.com/Pedro-Cuevas/p5/tree/main/spring/src/main/resources/static/assets/js/contacto.js)
 
-- Archivos JAVA: spring/src/main/java/com/example/demo
+- Archivos JAVA: [spring/src/main/java/com/example/demo](https://github.com/Pedro-Cuevas/p5/tree/main/spring/src/main/java/com/example/demo)
